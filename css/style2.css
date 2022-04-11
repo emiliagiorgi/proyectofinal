@@ -1,0 +1,43 @@
+/*font y headings*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap');
+
+h1,
+h2,
+h4{
+	font-family: 'Roboto Serif', serif;
+	margin: 10px 0;
+}
+
+h1{
+	font-size: 2rem;
+}
+
+h2{
+	font-size: 1.8rem;
+}
+
+h4{
+	font-size: 1rem;
+}
+/*nav*/
+
+#botonera{
+	background-color: rgba(217, 190, 170, .8);
+}
+
+#botonera img{
+width: 200px;
+}
+
+/*clases bg - btn*/
+
+.btn-receta{
+		background-color: rgba(217, 190, 170, .8);
+}
+
+.btn-receta:hover{
+	background: linear-gradient(to top, rgba(217, 190, 170, .5), rgba(217, 190, 170, 1.0);
+	color: black;
+	cursor: pointer;
+	transition: all 2s;
+}

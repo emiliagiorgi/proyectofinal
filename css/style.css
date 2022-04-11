@@ -1,0 +1,747 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto+Serif:wght@100&display=swap');
+
+html{
+	font-size: 62.5%;
+}
+body{
+	background-color: rgb(217, 198, 176);
+}
+
+h4{
+	font-size: 1.8rem;
+	font-weight: 400;
+	font-family: 'Roboto Serif', sans-serif;
+	color: rgb(166, 98, 38);
+}
+
+header nav{
+	background-color: rgba(217, 190, 170, .8);
+}
+
+header nav ul li{
+	list-style: none;
+}
+
+header nav ul li a{
+	color: rgb(166, 98, 38);
+	text-decoration: none;
+	font-size: 1.7rem;
+	font-family: 'Roboto Mono', monospace;
+
+}
+
+/*index.HTML*/
+
+#mainNav{
+	grid-area: nav;
+}
+#section1{
+	grid-area: imagenes;
+}
+#cuadro{
+	grid-area: cuadro;
+}
+
+#recetasRelevantes{
+	grid-area: relevantes;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+.contenedor{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "nav" "imagenes" "cuadro" "relevantes" "footer";
+}
+
+#section1 img{
+		width: 60%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+/*media queries*/
+
+@media (min-width: 768px) {
+	.contenedor{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas: "nav nav" "imagenes imagenes" "cuadro cuadro" 
+		"relevantes relevantes" "footer footer";
+	}
+
+	#section1 img{
+		width: 60%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (min-width: 1024px){
+	.contenedor{
+		grid-template-columns: 1fr
+		grid-template-rows: auto;
+		grid-template-areas: "nav" "imagenes" "cuadro" 
+		"relevantes" "footer";
+	}
+
+	#recetasRelevantes .masVistas{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+	}
+
+	#recetasRelevantes .masVistas figure{
+		width: 30%;
+	}
+	.botonera{
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.botonera li{
+		display: inline-block;
+	margin-right: 20px;
+	margin-top: 6px;
+	height: 30px;
+	vertical-align: middle;
+
+	}
+
+		#section1 img{
+		width: 40%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.sobreVivaCousine p{
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 2.3rem;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.sobreVivaCousine{
+	width: 95%;
+	height: auto;
+	margin: 20px auto;
+	border: solid 2px rgb(166, 98, 38);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	background-image: url(../img/back2.jpg);
+}
+.sobreVivaCousine h1{
+font-weight: 300;
+font-size: 3rem;
+padding: 10px 0;
+color: rgb(166, 98, 38);
+line-height: 2.3rem;
+font-family: 'Roboto Serif', sans-serif;
+margin: 10px 0;
+}
+ 
+#recetasRelevantes h2{
+font-weight: 300;
+font-size: 3rem;
+padding: 10px 0;
+color: rgb(166, 98, 38);
+line-height: 2.3rem;
+font-family: 'Roboto Serif', sans-serif;
+margin: 10px 0;
+}
+
+#recetasRelevantes .masVistas{
+	margin: 10px ;
+}
+
+#recetasRelevantes .masVistas figure{
+	text-align: center;
+}
+
+#recetasRelevantes .masVistas figure img{
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#recetasRelevantes .masVistas figure figcaption{
+	color: rgb(166, 98, 38);
+	line-height: 2.3rem;
+	font-family: 'Roboto Serif', sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+	font-style: italic;
+	padding: 10px 0;
+}
+
+#recetasRelevantes .masVistas div{
+	text-align: center;
+}
+
+#recetasRelevantes .masVistas figure p{
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.4rem;
+	font-family: 'Roboto Mono', monospace;
+	font-style: italic;
+	padding-bottom: 10px;
+}
+
+.imgBudin{
+	display: block;
+	margin-left: 2px;
+}
+
+.imgCookies{
+	display: block;
+	margin-left: 2px;
+}
+
+.imgMuffins{
+	display: block;
+	margin-left: 2px;
+}
+/*recetasdulces.html*/
+
+#principio{
+	grid-area: principio;
+}
+
+#recetasDulces{
+	grid-area: dulces;
+}
+
+.contenedor4{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "nav" "principio" "dulces" "footer";
+
+}
+
+/*media queries*/
+
+@media (min-width: 768px) {
+	.contenedor4{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas: "nav nav" "principio principio" "dulces dulces" "footer footer";
+	}
+
+
+@media (min-width: 1024px){
+	.contenedor4{
+		grid-template-columns: 1fr
+		grid-template-rows: auto;
+		grid-template-areas: "nav" "principio" "dulces" "footer";
+	}
+
+
+.recetasDulces{
+	width: 95%;
+	height: auto;
+	margin: 20px auto;
+	border: solid 2px rgb(166, 98, 38);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	background-image: url(../img/back2.jpg);
+}
+
+.recetasDulces p{
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 2.3rem;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.recetasDulces h2{
+ font-weight: 300;
+font-size: 3rem;
+padding: 10px 0;
+color: rgb(166, 98, 38);
+line-height: 2.3rem;
+font-family: 'Roboto Serif', sans-serif;
+margin: 10px 0;
+}
+
+.recetasDulces p {
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 2.3rem;
+	font-family: 'Roboto Mono', monospace;
+}
+
+#recetasDulces .recetasDolche{
+	margin: 20px ;
+	display: flex;
+	justify-content: space-between;
+}
+
+#recetasDulces .recetasDolche div{
+    text-align: center;
+}
+
+#recetasDulces .recetasDolche figure figcaption{
+	color: rgb(166, 98, 38);
+	line-height: 2.3rem;
+	font-family: 'Roboto Serif', sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+	font-style: italic;
+	padding: 10px 0;
+}
+
+#recetasDulces .recetasDulces {
+	text-align: center;
+}
+
+.tortadecocoh2{
+font-weight: 300;
+font-size: 3rem;
+padding: 10px 0;
+color: rgb(166, 98, 38);
+line-height: 2.3rem;
+font-family: 'Roboto Serif', sans-serif;
+text-align: center;
+margin-top: 20px;
+}
+
+/*general*/
+
+.botonera{
+	position: sticky;
+	top: 0;
+	padding: 6px 30px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.botonera ul{
+	display: flex;
+	margin-left: 20px;
+	justify-content: space-between;
+}
+
+.botonera li{
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 6px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.botonera li a:hover{
+	font-weight: 600;
+	color: #9F591B
+}
+
+.textCenter{
+	text-align: center;
+}
+
+.pie a{
+	text-decoration: none;
+}
+
+.contacto{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.ubicacion{
+	display: inline-block;
+	margin-left: 20px;
+}
+.textLeft{
+	text-align: left;
+}
+
+/*botones*/
+
+.btnRecetas{
+	width: 20%;
+    height: 40px;
+    color: rgb(166, 98, 38);
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: white;
+    margin-left: 10px;
+
+}
+
+.btnRecetasMuffinsA{
+	width: 40%;
+    height: 40px;
+    color: rgb(166, 98, 38);
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: white;  
+}
+
+.button{
+	margin: 10px;
+}
+
+.btnVerMas{
+	width: 100%;
+    height: 50px;
+    color: rgb(166, 98, 38);
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: white;  
+
+}
+
+.btnBudin{
+	width: 20%;
+    height: 40px;
+    color: rgb(166, 98, 38);
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: white;
+    margin: 10px;
+}
+
+.btnRecetas2{
+	width: 20%;
+    height: 40px;
+    color: rgb(166, 98, 38);
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+/*recetasHTML*/
+
+#intro{
+	grid-area: intro;
+}
+
+#recetas{
+	grid-area: recetas;
+}
+
+.contenedor3{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "nav" "intro" "recetas" "footer";
+
+}
+
+/*media queries*/
+
+@media (min-width: 768px) {
+	.contenedor3{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas: "nav nav" "intro intro" "recetas recetas" "footer footer";
+	}
+
+@media (min-width: 1024px){
+	.contenedor3{
+		grid-template-columns: 1fr
+		grid-template-rows: auto;
+		grid-template-areas: "nav" "intro" "recetas" "footer";
+	}
+
+
+#recetas h2{
+font-weight: 500;
+font-size: 4rem;
+padding: 10px 0;
+color: rgb(166, 98, 38);
+line-height: 2.3rem;
+font-family: 'Roboto Serif', sans-serif;
+margin: 10px 0;
+}
+
+#recetas .recetasViva{
+	margin: 20px ;
+	display: flex;
+	justify-content: space-between;
+}
+
+#recetas .recetasViva div{
+	text-align: center
+}
+
+#recetas .recetasViva figure figcaption {
+	color: rgb(166, 98, 38);
+	line-height: 2.3rem;
+	font-family: 'Roboto Serif', sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+	font-style: italic;
+	padding: 10px 0;
+}
+
+.noTePierdas{
+font-weight: 600;
+font-size: 4rem;
+padding: 10px 0;
+color: rgb(166, 98, 38);
+line-height: 2.3rem;
+font-family: 'Roboto Mono', monospace;
+margin: 10px 0;
+text-align: center
+}
+
+.empanadas{
+font-weight: 300;
+font-size: 3rem;
+padding: 10px 0;
+color: rgb(166, 98, 38);
+line-height: 2.3rem;
+font-family: 'Roboto Serif', sans-serif;
+text-align: center;
+margin-top: 20px;
+}
+
+
+
+/*tortanesquik.html*/
+
+#torta{
+	grid-area: torta;
+}
+
+#tortaNesquik{
+	grid-area: nesquik;
+}
+
+.contenedor5{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "nav" "torta" "nesquik" "footer";
+}
+
+/*media queries*/
+
+@media (min-width: 768px) {
+	.contenedor5{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas: "nav nav" "torta torta" "nesquik nesquik" "footer footer";
+	}
+
+
+@media (min-width: 1024px){
+	.contenedor5{
+		grid-template-columns: 1fr
+		grid-template-rows: auto;
+		grid-template-areas: "nav" "torta" "nesquik" "footer";
+	}
+
+
+#tortaNesquik .ingredientesTitulo{
+font-weight: 300;
+font-size: 3rem;
+padding: 10px 0;
+color: rgb(166, 98, 38);
+line-height: 2.3rem;
+font-family: 'Roboto Serif', sans-serif;
+margin: 10px 0;
+}
+
+#tortaNesquik .texto{
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 2.3rem;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.tortaDeChocolate{
+font-weight: 500;
+font-size: 4rem;
+padding: 10px 0;
+color: rgb(166, 98, 38);
+line-height: 2.3rem;
+font-family: 'Roboto Serif', sans-serif;
+text-align: center;
+margin-top: 20px;
+}
+
+
+
+/*productos.html*/
+
+#zanahoria{
+	grid-area: budin;
+}
+
+#productos{
+	grid-area: productos;
+}
+
+.contenedor2{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "nav" "budin" "productos" "footer";
+}
+
+/*media queries*/
+
+@media (min-width: 768px) {
+	.contenedor2{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas: "nav nav" "budin budin" "productos productos" "footer footer";
+	}
+
+
+@media (min-width: 1024px){
+	.contenedor2{
+		grid-template-columns: 1fr
+		grid-template-rows: auto;
+		grid-template-areas: "nav" "budin" "productos" "footer";
+	}
+
+#productos .fotos{
+	margin: 20px ;
+	display: flex;
+	justify-content: space-between;
+}
+
+#productos .fotos div{
+	text-align: center;
+}
+#productos .fotos figure {
+	text-align: center;
+}
+
+#productos .fotos figure figcaption{
+	color: rgb(166, 98, 38);
+	line-height: 2.3rem;
+	font-family: 'Roboto Serif', sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+	font-style: italic;
+	padding: 10px 0;
+}
+
+.budinP{
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 2.3rem;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.budinH2 {
+font-weight: 300;
+font-size: 3rem;
+padding: 10px 0;
+color: rgb(166, 98, 38);
+line-height: 2.3rem;
+font-family: 'Roboto Serif', sans-serif;
+margin: 10px 0;
+}
+
+.budin{
+font-weight: 500;
+font-size: 4rem;
+padding: 10px 0;
+color: rgb(166, 98, 38);
+line-height: 2.3rem;
+font-family: 'Roboto Serif', sans-serif;
+margin: 10px 0;
+}
+
+/*contacto*/
+
+#mainNav{
+	grid-area: nav;
+}
+
+#contacto{
+	grid-area: contacto;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+
+.box{
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "nav" "contacto" "footer";
+
+}
+
+@media (min-width: 768px){
+	.box{
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: "nav nav" "contacto contacto" "footer footer";
+	}
+
+}
+
+@media (min-width: 1024px){
+	.box{
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "nav" "contacto" "footer";
+	}
+}
+
+
+#contacto .titulo {
+font-weight: 600;
+font-size: 4rem;
+padding: 30px;
+color: rgb(166, 98, 38);
+line-height: 2.3rem;
+font-family: 'Roboto Mono', monospace;
+margin: 10px;
+text-align: center
+}
+
+#contacto p{
+font-weight: 300;
+font-size: 2rem;
+padding: 10px;
+color: rgb(166, 98, 38);
+line-height: 2.3rem;
+font-family: 'Roboto Serif', sans-serif;
+margin: 10px;
+text-align: center;
+}
+
+#contacto .mayuscula{
+font-weight: 600;
+font-size: 2rem;
+padding: 10px;
+color: rgb(166, 98, 38);
+line-height: 2.3rem;
+font-family: 'Roboto Serif', sans-serif;
+margin: 10px;
+text-align: center;
+}
