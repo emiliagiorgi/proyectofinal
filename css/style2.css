@@ -34,7 +34,6 @@ width: 200px;
 .btn-receta{
 		background-color: rgba(217, 190, 170, .8);
 }
-
 .btn-receta:hover{
 	background: linear-gradient(to top, rgba(217, 190, 170, .5), rgba(217, 190, 170, 1.0);
 	color: black;
